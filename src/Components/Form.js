@@ -5,7 +5,7 @@ export default function WorkOrderForm() {
     <div className="form-page-contain">
       <form className="form-contain">
         <div className="form-top">
-          <h1>Submit a Work Order </h1>
+          <span>Submit a Work Order </span>
           <p>Have an issue? Fill out the form and i can help!</p>
         </div>
 
@@ -58,22 +58,32 @@ export default function WorkOrderForm() {
             <span>Contact Info</span>
           </div>
           <div className="form-contact-bottom">
-            <input type="file" className="image-upload" multiple />
+
+            <div className="form-name"> 
+              <p>First Name</p>
             <input
               type="text"
               className="contact-info"
               placeholder="First Name"
             />
+            </div>
+            <div className="form-name"> 
+              <p>Last Name</p>
             <input
               type="text"
               className="contact-info"
               placeholder="Last Name"
             />
+            </div>
+          
+           <div className="form-name"> 
+            <p>Email Address</p>
             <input
               type="email"
               className="contact-info"
               placeholder="Email Address"
             />
+            </div>
           </div>
         </div>
       </form>
